@@ -37,6 +37,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop'  }
   "Plug 'ycm-core/YouCompleteMe'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'puremourning/vimspector'
 call plug#end()
 
 
@@ -183,8 +184,8 @@ noremap ,frr :LeaderfRgRecall<cr>
 "**********************
 "=>youcompleteme
 "开启或关闭ycm
-let g:ycm_auto_trigger=0 
 "***配置
+let g:ycm_auto_trigger=0 
 nnoremap <leader>y :let g:ycm_auto_trigger=0<CR>                " turn off YCM
 nnoremap <leader>Y :let g:ycm_auto_trigger=1<CR>                "turn on YCM
 "语义补全触发快捷键
@@ -216,6 +217,8 @@ let g:ycm_add_preview_to_completeopt = 0
 let g:pymode_options_colorcolumn = 1
 "增加最大长度
 let g:pymode_options_max_line_length = 100 
+"语法检查
+let g:pymode_lint = 0
 
 
 
@@ -387,4 +390,13 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+
+"**********************
+"=>vimspector
+"***配置
+"使用第一套快捷键
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+"***快捷键
 
