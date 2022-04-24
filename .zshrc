@@ -71,13 +71,22 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+# 终端
   zsh-autosuggestions
   zsh-syntax-highlighting
-  sudo
+  history-substring-search
+  # vi-mode
+# 路径(和书签)
   wd
   z
+# 解压
   extract
+# 别称
+  git
+  tmux
+# 其他
+  sudo
+  colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -112,13 +121,27 @@ source $ZSH/oh-my-zsh.sh
 
 
 # 下面为自己的配置
-# **********************************别名***************************
+# ***************************别名**********************************
 alias gi='git init'
 
-# 跳转
+# ***************************跳转**********************************
 bindkey -s '\eo' 'cd ..\n'    # 按下ALT+O 就执行 cd .. 命令
 bindkey -s '\e;' 'ls -l\n'    # 按下 ALT+; 就执行 ls -l 命令
 
+
+# ***************************插件**********************************
+#zsh-autosuggestion
+bindkey ',' autosuggest-accept
+
+#history-substring-search
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+
+
+# ***************************bug**********************************
+# 无法清屏，python不能使用删除和方向键
+export TERMINFO=/usr/share/terminfo
+export TERM=vt100
 
 
 
