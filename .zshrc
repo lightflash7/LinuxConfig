@@ -140,9 +140,9 @@ HISTORY_SUBSTRING_SEARCH_FUZZY='whateveryouwant'
 
 
 # ***************************bug**********************************
-# 无法清屏，python不能使用删除和方向键
-export TERMINFO=/usr/share/terminfo
-export TERM=vt100
+# python不能使用删除和方向键(但是开启了会造成颜色丢失的bug）
+# export TERMINFO=/usr/share/terminfo
+# export TERM=vt100
 
 
 
