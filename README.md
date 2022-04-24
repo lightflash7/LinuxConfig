@@ -6,7 +6,7 @@
 >注：在zsh shell时候由于有历史搜索插件可以注释掉最后几行
 
 ## tmux配置
-- '.tmux.conf'
+- `.tmux.conf`
 
 ## vim配置
-- '.vimrc'
+- `.vimrc`
