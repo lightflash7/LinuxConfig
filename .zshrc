@@ -160,3 +160,11 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# ***************************功能**********************************
+# 刷新配置
+alias resource='source ~/.zshrc'
+
+# 代理
+alias start_proxy='export all_proxy="socks://127.0.0.1:10800"'
+alias close_proxy='export all_proxy=""'
