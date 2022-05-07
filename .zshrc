@@ -144,21 +144,21 @@ HISTORY_SUBSTRING_SEARCH_FUZZY='whateveryouwant'
 # export TERMINFO=/usr/share/terminfo
 # export TERM=vt100
 
-
+# ***************************环境变量**********************************
+# 设置vim为默认编辑器
+export EDITOR=/usr/bin/vim
 
 # **********************************conda配置**********************
-alias condaactivate='source /media/mdisk/lzh/app/anaconda3/bin/activate'
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/mnt/disk1/lzh/app/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/lingzhou/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/mnt/disk1/lzh/app/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/mnt/disk1/lzh/app/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/lingzhou/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/lingzhou/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/mnt/disk1/lzh/app/anaconda3/bin:$PATH"
+        export PATH="/home/lingzhou/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
