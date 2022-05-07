@@ -166,5 +166,6 @@ unset __conda_setup
 alias resource='source ~/.zshrc'
 
 # 代理
-alias start_proxy='export all_proxy="socks://127.0.0.1:10800"'
-alias close_proxy='export all_proxy=""'
+alias start_proxy='export all_proxy="http://127.0.0.1:10800"'
+alias start_sock_proxy='export all_proxy="socks://127.0.0.1:10800"'
+alias stop_proxy='export all_proxy=""'
