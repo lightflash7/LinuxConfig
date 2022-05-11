@@ -138,6 +138,8 @@ bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_FUZZY='whateveryouwant'
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # ***************************bug**********************************
 # python不能使用删除和方向键(但是开启了会造成颜色丢失的bug）
@@ -166,3 +168,4 @@ unset __conda_setup
 
 # CUDA
 export PATH=$PATH:/usr/local/cuda/bin
+
