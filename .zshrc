@@ -131,7 +131,7 @@ bindkey -s '\e;' 'ls -l\n'    # 按下 ALT+; 就执行 ls -l 命令
 
 # ***************************插件**********************************
 #zsh-autosuggestion
-bindkey ',' autosuggest-accept
+bindkey '^J' autosuggest-accept
 
 #history-substring-search
 bindkey '^P' history-substring-search-up
